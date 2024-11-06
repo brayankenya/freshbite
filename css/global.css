@@ -10,14 +10,35 @@
     display: flex;
     background-color: whitesmoke;
 }
-.box1{
+.hidden{
+    display: none !important;
+}
+.box1{ 
     width: 14%;
     height: 100%;
     background-color: rgb(25, 25, 34);
 }
+.xLink{
+    color: rgb(25, 25, 34);
+    font-size: 30px;
+}
+
 .box2{
-    width: 86%;
+    width: 100%;
     height: 100%;
+}
+.btnDone{
+    background-color: rgb(25, 25, 34);
+    padding: 7px;
+    border: none;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+}
+.flexDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .box-top{
     padding: 10px;
@@ -40,6 +61,19 @@
     border-radius: 10px;
     margin-bottom: 20px;
 }
+.flextop{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.flextop button{
+    background-color: rgb(25, 25, 34);
+    color: white;
+    padding: 6px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
 .ul1 li:hover{
     background-color: rgb(49, 46, 43);
 }
@@ -53,7 +87,7 @@
     align-items: center;
 }
 .nav{
-    width: 99.9%;
+    width: 100%;
     background-color: rgb(25, 25, 34);
     color: white;
     display: flex;
@@ -82,6 +116,8 @@
     width: 70%; 
     height: 90vh;
     overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .posBox-container::-webkit-scrollbar{
@@ -242,3 +278,224 @@
     border: none;
     margin-top: 10px;
 }
+.container-item{
+    background-color: white;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 4px 6px 5px rgb(187, 184, 184);
+    border-radius: 10px;
+    border-bottom: 20px;
+    margin-top: 20px;
+}
+
+.imgDiv{
+    height: 35vh;
+    width: 250px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.btnBook{
+    background-color: rgb(25, 25, 34);
+    color: white;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+.btnRemove{
+    color: rgb(25, 25, 34);
+    width: 150px;
+    cursor: pointer;
+}
+.book-item{
+    padding-bottom: 10px;
+    border-bottom: 1px dotted rgb(25, 25, 34);
+}
+.ul{
+    display: flex;
+    gap: 30px;
+}
+.pop-contaner{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #6789;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popBup{
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.imgOneDiv{
+    height: 50vh;
+    width: 100%;
+}
+.formDiv div{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formDiv div input{
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding: 7px;
+    border: 1px solid rgb(226, 224, 224);
+}
+.btn-btnBook{
+    width: 100%;
+    background-color: rgb(25, 25, 34);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+}
+.navbar1{
+    background-color: rgb(25, 25, 34);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.navbar1 ul{
+    display: flex;
+    margin-left: 30px;
+    gap: 20px;
+}
+.navbar1 ul li{
+    list-style: none;
+}
+.navbar1 ul li a{
+    color: white;
+    text-decoration: none;
+}
+.formAdd{
+    background-color: whitesmoke;
+    width: 35%;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 4px;
+    color: rgb(59, 58, 58);
+    box-shadow:4px 4px 4px 4px rgb(202, 200, 200);
+}
+.formAdd div{
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+.formAdd div button{
+    background-color: rgb(25, 25, 34);
+    color: white;
+    padding: 7px;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.formAdd div input{
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid rgb(175, 171, 171);
+}
+.hflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.tableService{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(25, 25, 34);
+}
+.tableService thead{
+    background-color: rgb(48, 48, 65);
+}
+.tableService thead th{
+    padding: 10px;
+    text-align: start;
+    color: white;
+}
+.tableService tbody tr td{
+    padding: 10px;
+    color: white;
+    border-bottom: 1px dotted white;
+}
+.top-s{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(25, 25, 34);
+}
+.tableService tbody tr:hover{
+    background-color: rgb(48, 48, 65);
+}
+.flex-dash{
+    display: flex;
+}
+.usersDiv{
+    width: 20%;
+}
+.reportsDiv{
+    width: 80%;
+}
+.card-user{
+    background-color: rgb(25, 25, 34);
+    padding: 10px;
+    border-radius: 6px;
+    width: 80%;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: auto;margin-right: auto;
+}
+.card-user:hover{
+    background-color: rgb(48, 48, 65);
+}
+.userTXT{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(25, 25, 34);
+}
+.usersDiv{
+    height: 80vh;
+    border-radius: 4px;
+    margin: 20px;
+    overflow: scroll;
+    background-color: whitesmoke;
+    border: 1px solid rgb(25, 25, 34);
+}
+.usersDiv::-webkit-scrollbar{
+    display: none;
+}
+.dashboard-top{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgb(25, 25, 34);
+}
+.tb-100{
+    width: 100% !important;
+}
+ 

@@ -1,7 +1,7 @@
 const btnNewsale=document.getElementById('btnNewSale')
 const btnCheckout=document.getElementById('btnCheckout')
 const posContainer=document.getElementById('posContainer')
-
+const pop =document.getElementById('pop');
 const pwd=document.getElementById('pwd');
 const check=document.getElementById('check');
 
@@ -16,3 +16,5 @@ function showPwd() {
         pwd.type="password";
     }
 }
+
+

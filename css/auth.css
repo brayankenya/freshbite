@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     background-size: cover;
-    background-image: url('../images/meat4.jpg');
     align-items: center;
 }
 .form-div{

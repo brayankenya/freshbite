@@ -38,14 +38,14 @@
     </div>
     <?php
     if (isset($_POST['btnRegister'])) {
-        $conn=mysqli_connect("localhost","root","","freshbite");
+        $conn=mysqli_connect("localhost","root","","beauty");
         $username=$_POST['username'];
         $fullname=$_POST['fullname'];
         $email=$_POST['email'];
         $phone=$_POST['phone'];
         $password=$_POST['password'];
        
-        $sql_insert="INSERT INTO `users`(`id`, `fullname`, `username`, `phone`, `email`, `password`) VALUES (null,'$fullname','$username','$phone','$email','$password')";
+        $sql_insert="INSERT INTO `users`(`id`, `name`, `phone`, `email`, `username`, `password`) VALUES (null,'$fullname','$phone','$email','$username','$password')";
         $exec=mysqli_query($conn,$sql_insert);
        
         if ($exec) {

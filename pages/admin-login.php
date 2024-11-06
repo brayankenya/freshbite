@@ -13,9 +13,9 @@ session_start();
 <body>
     
     <div class="container">
-        <form class="form-div" action="index.php" method="POST">
+        <form class="form-div" action="admin-login.php" method="POST">
             <div class="input-div">
-                <h2>Login</h2>
+                <h2>Administrator Account</h2>
             </div>
             <div class="input-div">
                 <input type="text" name="username" required="true" placeholder="Enter Username" class="input">
@@ -30,7 +30,7 @@ session_start();
                 <button class="btnLogin" name="btnLogin">Login</button>
             </div>
             <div class="input-div">
-             <small>You do not have account ? <a href="register.php">Register</a></small>
+             <small>You are not admin ? <a href="index.php">Login User</a></small>
                
             </div>
 
@@ -45,16 +45,11 @@ if (isset($_POST['btnLogin'])) {
     $username=$_POST['username'];
     $passowrd=$_POST['password'];
  
-    $sql="SELECT * FROM `users` WHERE username='$username' and password='$passowrd'";
  
-    $exec=mysqli_query($conn,$sql);
- 
-    $count=mysqli_num_rows($exec);
- 
-    if($count > 0){
+    if($username == 'admin' && $passowrd=='admin123'){
        
        $_SESSION["username"]=$username;
-         header('location:dashboard.php');
+         header('location:admin.php');
     }else{
      echo '
      <section>
@@ -67,7 +62,7 @@ if (isset($_POST['btnLogin'])) {
                  <div>
                      <small>Incorect username or password !</small>
                  </div>
-                 <div><a href="index.php"><button class="btnOK">Ok</button></a></div>
+                 <div><a href="admin-login.php"><button class="btnOK">Ok</button></a></div>
              </center>
          </div>
      </div>
